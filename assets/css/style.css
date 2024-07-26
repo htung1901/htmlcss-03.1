@@ -4,6 +4,7 @@
 
 :root {
   --primary-color: #143c3c;
+  --sub-color: #e2eddf;
   --header-color: #152427;
   --item-color: #575d5e;
 }
@@ -264,4 +265,58 @@ a {
 .decor__flower-lower {
   bottom: -36.45px;
   right: 19.12px;
+}
+
+/* Brand */
+.brand {
+  margin-top: 42.3px;
+}
+
+.brand__list {
+  display: flex;
+  align-items: center;
+  padding: 0 122px;
+  height: 201px;
+  border-radius: 100.5px;
+  background: var(--sub-color);
+}
+
+.brand__icon {
+  display: flex;
+  align-items: center;
+}
+
+.brand-google {
+  margin-right: 47px;
+  font-size: 3.1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.brand-slack {
+  margin-right: 51px;
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.brand-agworld {
+  margin-right: 64px;
+  margin-left: 11px;
+  font-size: 2.6rem;
+  color: #163c35;
+}
+
+.brand-riotinto {
+  margin-right: 63px;
+  font-family: "Sonsie One";
+  font-size: 2.3rem;
+  color: var(--primary-color);
+}
+
+.brand-heroku {
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 1.995px;
+  color: var(--primary-color);
 }

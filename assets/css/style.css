@@ -7,7 +7,7 @@
   --sub-color: #e2eddf;
   --header-color: #152427;
   --item-color: #575d5e;
-  --desc-color: #7D8188;
+  --desc-color: #7d8188;
 }
 
 html {
@@ -391,6 +391,7 @@ a {
   border-radius: 50%;
   color: #152427;
   background: #e2eddf;
+  transition: 0.25s;
 }
 
 .control-btn:hover {
@@ -416,8 +417,7 @@ a {
   border-radius: 20px 20px 0px 0px;
 }
 
-.service-item:hover 
-.service-item__body::after {
+.service-item:hover .service-item__body::after {
   box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
 }
 
@@ -451,7 +451,6 @@ a {
   height: 245px;
   border-radius: 20px;
   transition: 0.25s;
-  
 }
 
 .service-item__heading {
@@ -470,3 +469,216 @@ a {
   line-height: 1.71; /* 171.429% */
   color: var(--desc-color);
 }
+
+/* About */
+.about {
+  margin: 79px 0;
+}
+
+.about-inner {
+  position: relative;
+  display: flex;
+  column-gap: 64px;
+}
+
+.about__media {
+  position: relative;
+  padding-top: 13px;
+}
+
+.about__images {
+  display: flex;
+  column-gap: 21px;
+}
+
+.about__img {
+  width: 284px;
+  height: 480px;
+  border-radius: 210px;
+  box-shadow: 0px 4px 234px 11px rgba(59, 137, 71, 0.25);
+}
+
+.about__img--lower {
+  margin-top: 77px;
+}
+
+.about-decor {
+  position: absolute;
+  top: -18px;
+  left: 46px;
+}
+
+.about-heading-small {
+  position: relative;
+  margin-left: 46px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.125; /* 112.5% */
+  color: var(--header-color);
+}
+
+.about-heading-small::before {
+  position: absolute;
+  left: -46px;
+  top: 9px;
+  content: "";
+  width: 25px;
+  height: 1px;
+  background: var(--header-color);
+}
+
+.about__heading {
+  margin-top: 20px;
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 1.24; /* 123.81% */
+  color: var(--header-color);
+}
+
+.about__desc {
+  margin-top: 11px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.625; /* 162.5% */
+  color: var(--desc-color);
+}
+
+.statistic-item {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  margin-top: 38px;
+  padding-bottom: 20px;
+  padding-right: 7px;
+  border-bottom: 1px solid #83a17d;
+}
+
+.statistic-data {
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 1.24; /* 123.81% */
+  color: var(--header-color);
+}
+
+.statistic-desc {
+  font-size: 1.4rem;
+  line-height: 1.71429;
+}
+
+.progress {
+  position: absolute;
+  left: 457px;
+  top: 418px;
+  padding-top: 19px;
+  width: 143px;
+  height: 144px;
+  border-radius: 8px;
+  font-family: "Public Sans";
+  background: #fff;
+  box-shadow: 0px 7px 54px 0px rgba(154, 154, 154, 0.25);
+}
+
+.progress__text {
+  color: var(--header-color);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4; /* 140% */
+}
+
+.progress-top {
+  margin-left: 23px;
+}
+
+.progress__heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1; /* 100% */
+  color: var(--header-color);
+}
+
+.progress__desc {
+  margin-top: 6px;
+  font-size: 1rem;
+  line-height: 1.4; /* 140% */
+  color: var(--item-color);
+}
+
+.progress__data {
+  margin-top: 10px;
+}
+
+.progress__data-bar {
+  position: relative;
+  margin-top: 3px;
+  width: 96px;
+  height: 2px;
+  border-radius: 10px;
+  background: #eaeaea;
+}
+
+.progress__data-bar::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 2px;
+  border-radius: 10px;
+  background: #83a17d;
+}
+
+.progress__loading {
+  margin: 3px 0 0 57px;
+}
+
+.progress-bottom {
+  padding-top: 3px;
+  margin-left: 17px;
+}
+
+.progress__checkbox {
+  position: relative;
+  margin-left: 2px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #EAEAEA;
+}
+
+.progress__checkbox::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #143C3C;
+}
+
+.progress__teams {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  column-gap: 36px;
+}
+
+.progress__teams-desc {
+  margin-top: 1px;
+}
+
+.progress__teams-images {
+  display: flex;
+}
+
+.progress__teams-img {
+  display: block;
+  margin-left: -6px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #FFF;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+
+

@@ -56,7 +56,7 @@ a {
 /* Header */
 .header {
   padding-top: 14px;
-  font-family: "Public Sans";
+  font-family: "Public Sans", sans-serif;
 }
 
 .header-top {
@@ -187,7 +187,7 @@ a {
   border-left: 4px solid #143c3c;
   border-radius: 50%;
   transform: rotate(-45deg);
-  transition: 0.5s;
+  transition: 0.5s 0.3s ease-in-out;
 }
 
 .play-btn__circle {
@@ -686,7 +686,7 @@ a {
 
 /* Process */
 .process {
-  margin-top: 115px;
+  margin: 115px 0 148px 0;
 }
 
 .process-header {
@@ -821,4 +821,102 @@ a {
   right: 92px;
   z-index: 99;
   transition: transform 0.5s ease-out;
+}
+
+/* Video */
+.video {
+  padding: 116px 130px 63px;
+  background-color: var(--primary-color);
+}
+
+.video-header {
+  display: flex;
+  align-items: center;
+  gap: 93px;
+}
+
+.video-header__heading {
+  position: relative;
+  color: #e7f9f9;
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 52px;
+}
+
+.video-header__heading::after {
+  content: "";
+  position: absolute;
+  top: 82px;
+  left: 294px;
+  width: 66px;
+  height: 2px;
+  background: #83a17d;
+}
+
+.video-header__desc {
+  margin-bottom: 13px;
+  color: #6a8383;
+  font-family: "Public Sans";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.55; /* 155.556% */
+}
+
+.video-header__link {
+  color: #fff;
+  font-family: "Public Sans";
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.55; /* 155.556% */
+}
+
+.left-arrow {
+  margin-left: 26px;
+}
+
+.video-content {
+  margin-top: 65px;
+}
+
+.video-inner {
+  position: relative;
+  width: 100%;
+  height: 544px;
+  border-radius: 22px;
+}
+
+.video-vid {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 22px;
+  object-fit: cover;
+}
+
+.play-btn {
+  display: block;
+  position: absolute;
+  width: 118px;
+  height: 118px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.play-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.video-decor-1 {
+  position: absolute;
+  right: -57px;
+  bottom: 238px;
+}
+
+.video-decor-2 {
+  position: absolute;
+  top: -74px;
+  right: -53px;
 }
